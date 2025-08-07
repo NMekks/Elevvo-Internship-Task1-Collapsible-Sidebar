@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: black;
+  background-color: rgb(182, 177, 178);
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 19px;
+  overflow-y: hidden;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 1%;
+  left: 14%;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar .close-btn:hover {
+  opacity: 50%;
+}
+
+.open-btn {
+  margin: 1.25%;
+  font-size: 30px;
+  border: none;
+  padding:0;
+  background: none;
+}
+
+.open-btn:hover {
+    cursor: pointer;
+}
+
+.logo-image {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+}
+
+.logo-image img {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+nav {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin-top: 8%;
+  margin-left: 8%;
+  font-size: 22px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.nav-text {
+    margin-left: 7%;
+}
+
+.sidebar-items a:hover {
+  opacity: 50%;
+}
+
+.fa-solid.fa-house,
+.fa-solid.fa-circle-user,
+.fa-shirt,
+.fa-solid.fa-folder-open,
+.fa-solid.fa-envelope {
+  margin-right: 5%;
+}
+main {
+  flex: 1;
+  transition: 0.5s ease;
+}
+
+h2 {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+p {
+  margin-left: 5%;
+}
