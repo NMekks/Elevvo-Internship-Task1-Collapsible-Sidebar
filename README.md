@@ -1,13 +1,8 @@
 # Collapsible Sidebar Project
 
-A modern, fully responsive collapsible sidebar built with vanilla HTML, CSS, and JavaScript. This project demonstrates core front-end skills by creating a common UI component used in modern web applications.
+A modern, fully responsive collapsible sidebar built with vanilla HTML, CSS, and JavaScript.
 
 The sidebar features smooth animations and is optimized for both desktop and mobile views, providing an intuitive user experience across all devices.
-
-![Project Demo GIF](https://user-images.githubusercontent.com/your-username/your-repo/your-gif.gif)
-_To create a GIF like this, use a tool like Giphy Capture or ScreenToGif. Upload the GIF to your GitHub issue or a new issue to get a URL, then paste it here._
-
----
 
 ## ✨ Features
 
