@@ -1,14 +1,14 @@
 const sidebar = document.getElementById("sidebar");
 const main = document.getElementById("main");
+const openBtn = document.getElementById("openbtn");
 
-function openNav() {
-  // Remove the 'collapsed' class to make the sidebar and main content expand
-  sidebar.classList.remove("collapsed");
-  main.classList.remove("collapsed");
+function toggleNav() {
+  // classList.toggle will add 'collapsed' if it's not there,
+  // and remove it if it is there.
+  sidebar.classList.toggle("collapsed");
+  main.classList.toggle("collapsed");
 }
 
-function closeNav() {
-  // Add the 'collapsed' class to make the sidebar and main content shrink
-  sidebar.classList.add("collapsed");
-  main.classList.add("collapsed");
-}
+// --- Event Listeners ---
+// Listen for a click on the hamburger button and run toggleNav
+openBtn.addEventListener('click', toggleNav);

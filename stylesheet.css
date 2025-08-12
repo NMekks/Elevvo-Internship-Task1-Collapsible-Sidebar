@@ -26,7 +26,7 @@ body {
   transition: width 0.3s ease;
 }
 
-.sidebar .close-btn {
+/* .sidebar .close-btn {
   position: absolute;
   top: 1%;
   left: 14%;
@@ -39,7 +39,7 @@ body {
 
 .sidebar .close-btn:hover {
   opacity: 50%;
-}
+} */
 
 /* profile */
 
@@ -84,14 +84,6 @@ ul li {
 .sidebar-items a:hover {
   opacity: 50%;
 }
-
-/* .fa-solid.fa-house,
-.fa-solid.fa-circle-user,
-.fa-shirt,
-.fa-solid.fa-folder-open,
-.fa-solid.fa-envelope {
-  margin-right: 5%;
-} */
 
 /* main content */
 
@@ -138,4 +130,34 @@ h2, p {
   margin-right: 3%;
   margin-left: 0;
   margin-top: 20%;
+}
+
+/* --- RESPONSIVE STYLES for Mobile --- */
+/* This block applies only to screens 768px wide or smaller */
+@media (max-width: 576px) {
+
+   /* On mobile, the sidebar starts completely hidden */
+  .sidebar {
+    width: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .sidebar.collapsed{
+    display: none;
+  }
+  
+  /* When OPEN on mobile (not collapsed), it covers part of the screen */
+  .sidebar:not(.collapsed) {
+    width: 40%;
+  }
+
+  /* Main content always takes full width on mobile */
+  main{
+    margin-left: 40%
+  }
+  main.collapsed {
+    margin-left: 0%;
+  }
 }
