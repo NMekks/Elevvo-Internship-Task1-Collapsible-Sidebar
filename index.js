@@ -1,11 +1,14 @@
 const sidebar = document.getElementById("sidebar");
 const main = document.getElementById("main");
-const navText = document.getElementById("nav-text");
 
 function openNav() {
-    sidebar.style.width = "20%";
+  // Remove the 'collapsed' class to make the sidebar and main content expand
+  sidebar.classList.remove("collapsed");
+  main.classList.remove("collapsed");
 }
 
 function closeNav() {
-    sidebar.style.width = "5%";
+  // Add the 'collapsed' class to make the sidebar and main content shrink
+  sidebar.classList.add("collapsed");
+  main.classList.add("collapsed");
 }
