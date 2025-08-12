@@ -97,7 +97,6 @@ ul li {
 
 main {
    flex: 1;
-  padding-left: 2%; /* Add some padding */
   transition: margin-left 0.3s ease; /* Animate the margin change */
 }
 
@@ -136,4 +135,7 @@ h2, p {
 
 .sidebar.collapsed .nav-link {
   justify-content: center;
+  margin-right: 3%;
+  margin-left: 0;
+  margin-top: 20%;
 }
